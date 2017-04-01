@@ -36,3 +36,7 @@ li > p {
 a > h3 {
     margin-bottom: 0;
 }
+
+li > a {
+    text-decoration: none;
+}
