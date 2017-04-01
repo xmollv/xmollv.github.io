@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     font-size: 19px;
     line-height: 1.4;
+    text-align: justify;
 }
 
 #wrapper {
@@ -31,6 +32,7 @@ li > h3 {
 
 li > p {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 a > h3 {
@@ -39,4 +41,10 @@ a > h3 {
 
 li > a {
     text-decoration: none;
+}
+
+.dates > p{
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
 }
