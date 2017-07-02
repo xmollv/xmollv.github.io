@@ -1,0 +1,33 @@
+[
+    {
+        "id" : 1,
+        "name" : "Sant Joan",
+        "location" : "Ciutadella",
+        "startDate" : "2017-06-23T00:00:000Z",
+        "endDate" : "2017-06-24T00:00:000Z",
+        "headerImage" : "http://xmollv.io/photos/SantJoan.jpg",
+        "schedules" : [
+            {
+                "day" : "2017-06-23T00:00:000Z",
+                "events" : [
+                    {
+                        "startDate" : "2017-06-23T07:00:000Z",
+                        "title" : "Primer toc de Fabiol"
+                    },
+                    {
+                        "startDate" : "2017-06-23T09:00:000Z",
+                        "title" : "Caragol d'es Born"
+                    },
+                    {
+                        "startDate" : "2017-06-23T11:00:000Z",
+                        "title" : "Ses Avellanes"
+                    },
+                    {
+                        "startDate" : "2017-06-23T13:00:000Z",
+                        "title" : "Jo que se tomeu, una cosa molt llarga que farà que tot reventi cagunlaputa de cristo"
+                    }
+                ]
+            }
+        ]
+    }
+]
