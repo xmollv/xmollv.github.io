@@ -1,25 +1,33 @@
 body {
     font-family: -apple-system, sans-serif;
-    font-size: 19px;
-    line-height: 1.4;
-}
-
-h1,h2,h3 {
-    color: #836464;
-}
-
-a {
-    color: #cb2789;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    color: purple;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #222;
 }
 
 #wrapper {
-    max-width: 768px;
+    max-width: 640px;
     margin: 20px auto;
+}
+
+a {
+    color: #0881b3;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a > h1, h2, h3 {
+	color: #222;
+}
+
+a:hover {
+    -webkit-transition-property: border;
+    -moz-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-bottom: 2px solid; 
 }
 
 section > a > h3 {
