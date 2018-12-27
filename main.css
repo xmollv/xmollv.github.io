@@ -12,7 +12,7 @@ p {
 }
 
 a, a:hover, a:visited {
-	color: #000;
+	color: #1e1e1e;
 	text-decoration: none;
 }
 
@@ -50,6 +50,7 @@ p .link {
 	max-width: 768px;
 	text-align: center;
 	margin: auto;
+	color: #1e1e1e;
 }
 
 /* ----- Header ----- */
@@ -59,7 +60,6 @@ p .link {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	letter-spacing: -0.03em;
-	color: #333;
 }
 
 #subtitle {
