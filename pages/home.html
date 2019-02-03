@@ -7,6 +7,7 @@ permalink: /
 {% for post in site.posts %}
     <div class="home_item">
         <a id="home_item_link" href="{{ post.url }}">{{ post.title }}</a>
-        <p>{{post.excerpt}}</p>
+        <p>{{post.date | date_to_long_string}}</p>
+        <p>{{post.excerpt}} <a href="{{ post.url }}">Continue reading...</a></p>
     </div>
 {% endfor %}
