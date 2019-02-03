@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-    max-width: 768px;
     background-color: #fff;
     color: #1e1e1e;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -9,14 +8,38 @@ body {
     line-height: 1.8em;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
 header, footer {
     text-align: center;
 }
 
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgba(0, 0, 0, 0.05);
+}
+
 a {
+    color: rgb(0, 122, 255);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(0, 122, 255);
+}
+
+#feedback_pr {
+    font-size: 15px;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
