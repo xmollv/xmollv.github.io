@@ -9,11 +9,11 @@
     </header>
     <main>
         <article>
-            <h1 id="post_header">{{ page.title }}</h1>
+            <h1>{{ page.title }}</h1>
             <small>{{ page.date }}</small>
             {{ content }}
         </article>
-        <p id="feedback_pull_request">Do you have something to add to this post?<br/>Feel free to open an <a href="{{ site.github_url | append:'/issues' }}">issue</a> or create a <a href="{{ site.github_url | append: '/tree/master/_posts/'}}{{ page.path | remove_first:'_posts/' }}">pull request</a>.</p>
+        <p>Do you have something to add to this post?<br/>Feel free to open an <a href="{{ site.github_url | append:'/issues' }}">issue</a> or create a <a href="{{ site.github_url | append: '/tree/master/_posts/'}}{{ page.path | remove_first:'_posts/' }}">pull request</a>.</p>
     </main>
     <footer>
         {% include footer.html %}
