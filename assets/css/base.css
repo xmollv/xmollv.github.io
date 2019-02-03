@@ -82,6 +82,13 @@ a:visited {
     color: rgb(0, 122, 255);
 }
 
+blockquote {
+    border-left: 0.5em solid rgba(0, 0, 0, 0.05);
+    font-style: italic;
+    margin-left: 1em;
+    padding-left: 0.5em;
+}
+
 #feedback_pr {
     font-size: 15px;
     line-height: 1.5em;
