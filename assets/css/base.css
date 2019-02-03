@@ -1,0 +1,22 @@
+body {
+    margin: 0 auto;
+    max-width: 768px;
+    background-color: #fff;
+    color: #1e1e1e;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+header, footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
