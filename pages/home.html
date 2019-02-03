@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /
+---
+<h1>Xavi Moll</h1>
+
+{% for post in site.posts %}
+    <div class="home_item">
+        <a id="home_item_link" href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{post.excerpt}}</p>
+    </div>
+{% endfor %}
