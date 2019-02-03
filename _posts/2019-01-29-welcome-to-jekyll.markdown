@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Test post"
+title:  "Core Data: How to avoid pain"
 date:   2019-01-29
 permalink: "test"
 categories: programming
