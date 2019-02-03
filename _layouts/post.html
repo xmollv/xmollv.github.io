@@ -1,22 +1,5 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en-US">
-{% include head.html %}
-<body>
-    <header>
-        {% include header.html %}
-    </header>
-    <main>
-        <article>
-            <h1>{{ page.title }}</h1>
-            <small>{{ page.date }}</small>
-            {{ content }}
-        </article>
-        <p>Do you have something to add to this post?<br/>Feel free to open an <a href="{{ site.github_url | append:'/issues' }}">issue</a> or create a <a href="{{ site.github_url | append: '/tree/master/_posts/'}}{{ page.path | remove_first:'_posts/' }}">pull request</a>.</p>
-    </main>
-    <footer>
-        {% include footer.html %}
-    </footer>
-</body>
-</html>
+{{content}}
+<p>Do you have something to add to this post?<br/>Feel free to open an <a href="{{ site.github_url | append:'/issues' }}">issue</a> or create a <a href="{{ site.github_url | append: '/tree/master/_posts/'}}{{ page.path | remove_first:'_posts/' }}">pull request</a>.</p>
