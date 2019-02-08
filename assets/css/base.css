@@ -84,13 +84,13 @@ a:visited {
     color: rgb(0, 122, 255);
 }
 
-.highlighter-rouge {
+code.highlighter-rouge {
     background: #f6f8fa;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.highlight pre {
+pre.highlight {
     background: #f6f8fa;
     overflow: auto;
     font-size: 90%;
@@ -98,6 +98,7 @@ a:visited {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 4px;
 }
 
 blockquote {
