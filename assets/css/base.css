@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     color: #1e1e1e;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 1.8em;
@@ -52,7 +52,7 @@ article {
     padding-bottom: 1em;
 }
 
-/* Code blocks */
+/* Single-line code blocks */
 code.highlighter-rouge {
     background: #f6f8fa;
     border-radius: 3px;
@@ -60,10 +60,12 @@ code.highlighter-rouge {
     padding-left: 2px;
 }
 
+/* Multi-line code blocks */
 pre.highlight {
     background: #f6f8fa;
     overflow: auto;
     font-size: 90%;
+    line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
@@ -76,5 +78,5 @@ footer {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
 }
