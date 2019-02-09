@@ -38,8 +38,8 @@ header {
     color: white;
 }
 
-#header_title {
-    font-size: 30px !important;
+#header_container #header_title {
+    font-size: 30px;
 }
 
 #header_container > a {
