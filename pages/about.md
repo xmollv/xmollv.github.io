@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /about
+title: "About"
 ---
 # About Me
 Hi there! I'm an iOS Developer working at [Future Workshops](https://www.futureworkshops.com) in Barcelona, Spain.
