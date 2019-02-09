@@ -63,10 +63,28 @@ article {
 }
 
 #post_title {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 10px;
     line-height: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    #post_title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #post_title {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #post_title {
+        font-size: 1.3em;
+    }
 }
 
 #post_subtitle {
