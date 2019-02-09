@@ -2,7 +2,11 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    {% if page.layout == 'post' %}
     <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.author }} - {{ page.title }}</title>
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="xavi, moll, xavi moll, engineer, ios, swift, xcode, core data, ios developer, developer, barcelona, spain">
     <link rel="stylesheet" href="/assets/css/syntax-highlighter.css">
