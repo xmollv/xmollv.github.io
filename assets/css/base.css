@@ -72,3 +72,30 @@ pre.highlight {
     padding-bottom: 5px;
     border-radius: 3px;
 }
+
+/* Home */
+.home_item_title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 0px;
+}
+
+.home_item_title > a {
+    color: #1e1e1e;
+}
+
+.home_item_title > a:hover {
+    text-decoration: none;
+    color: rgb(27, 149, 224);
+}
+
+.home_item_date {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home_item_excerpt {
+    margin-bottom: 60px;
+}
