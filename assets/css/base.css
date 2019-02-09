@@ -22,6 +22,36 @@ a:visited {
     color: rgb(27, 149, 224);
 }
 
+/* Header */
+header {
+    background-color: rgba(44, 64, 93, 0.9);
+    height: 80px;
+}
+
+#header_container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+#header_title {
+    font-size: 30px !important;
+}
+
+#header_container > a {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+#header_title:hover {
+    text-decoration: none;
+}
+
 /* Article */
 main {
     margin: 0 auto;
