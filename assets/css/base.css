@@ -93,7 +93,7 @@ code.highlighter-rouge {
 pre.highlight {
     background: #f6f8fa;
     overflow: auto;
-    font-size: 90%;
+    font-size: 14px;
     line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
