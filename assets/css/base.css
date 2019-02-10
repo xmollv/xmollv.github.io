@@ -133,6 +133,10 @@ pre.highlight {
     margin-bottom: 60px;
 }
 
+.home_item_excerpt > p {
+    display: inline;
+}
+
 /* Media queries */
 @media screen and (max-width: 600px) {
     #post_title, .home_item_title {
