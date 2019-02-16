@@ -1,0 +1,13 @@
+title: "Xavi Moll"
+email: "xmollv@example.com"
+description: "Xavi Moll's website."
+url: "https://xmollv.io"
+github_url: "https://github.com/xmollv/xmollv.github.io"
+twitter_username: "xmollv"
+github_username: "xmollv"
+author: "Xavi Moll"
+logo: "/assets/images/logo.png"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

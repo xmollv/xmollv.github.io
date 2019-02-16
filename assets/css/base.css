@@ -1,0 +1,136 @@
+/* Global styles */
+body {
+    margin: 0 auto;
+    background-color: #fff;
+    color: #1e1e1e;
+	font-family: -apple-system, 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+a {
+    color: rgb(27, 149, 224);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+header > h3 {
+    margin: 0 auto;
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+}
+
+header > h3 > small {
+    color: rgb(60, 60, 60);
+}
+
+a:visited {
+    color: rgb(27, 149, 224);
+}
+
+/* Home */
+.home_item_title {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-bottom: 0px;
+}
+
+.home_item_date {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home_item_excerpt {
+    margin-bottom: 60px;
+}
+
+/* Article */
+main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+article {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#post_title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+#post_subtitle {
+    text-align: center;
+}
+
+#goodbye {
+    font-size: 15px;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Single-line code blocks */
+code.highlighter-rouge {
+    background: #f6f8fa;
+    border-radius: 3px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+/* Multi-line code blocks */
+pre.highlight {
+    background: #f6f8fa;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    #post_title, .home_item_title {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #post_title, .home_item_title {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #post_title, .home_item_title {
+        font-size: 1.3em;
+    }
+}
