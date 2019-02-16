@@ -9,7 +9,7 @@ Hi there! I'm Xavi Moll and I'm an iOS Developer working at [Future Workshops](h
 ## How do I work
 I started my journey on the Apple ecosystem back in 2015, and I've been building iOS apps full-time since then. My bread & butter is Swift, even though I've been writing Objective-C 🦕 on frameworks.
 
-I try to [keep the code as simple as possible](https://en.wikipedia.org/wiki/KISS_principle), and I have strong feelings against using dependencies for code that you can write yourself. The same applies for using VIPER or the [new hot architectural pattern](https://iosarchitecture.top) that's trendy this week. Use the right tool for the job, damn it.
+I try to [keep the code as simple as possible](https://en.wikipedia.org/wiki/KISS_principle), and I have strong feelings against using dependencies for code that you can write yourself. The same applies to using VIPER, MVVM, MVP or the [new hot architectural pattern](https://iosarchitecture.top) that's trendy this week.
 
 I tend to work using [MVC+Coordinators](http://khanlou.com/2015/01/the-coordinator/) as my architectural pattern because it's been proven successful in every way. Most of the time my UI is built on Interface Builder using `.xib` files due to the lack of dependency injection on `.storyboards`. My model layer is `CoreData` if persistence is a requirement.
 
