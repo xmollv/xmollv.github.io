@@ -127,17 +127,32 @@ footer {
     #post_title, .home_item_title {
         font-size: 2em;
     }
-
 }
 
 @media screen and (max-width: 450px) {
     #post_title, .home_item_title {
-        font-size: 1.6em;
+        font-size: 1.5em;
+    }
+
+    body {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
     #post_title, .home_item_title {
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header > h3 > small {
+        font-size: 12px;
+    }
+
+    pre.highlight {
+        font-size: 12px;
     }
 }
