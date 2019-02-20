@@ -31,19 +31,29 @@ img {
 
 /* Header */
 header {
-    background: rgba(0, 0, 0, 0.03);
+    background: #3a3a3a;
+    text-align: center;
 }
 
-header > h3 {
+header > a {
     margin: 0 auto;
     max-width: 768px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 50px;
+    font-size: 30px;
+    letter-spacing: 0.25em;
+    line-height: 70px;
+    font-weight: 200;
 }
 
-header > h3 > small {
-    color: rgb(60, 60, 60);
+header > a {
+    color: #fff;
+}
+
+header > a:visited {
+    color: #fff;
+}
+
+header > a:hover {
+    text-decoration: none;
 }
 
 /* Home */
@@ -147,9 +157,5 @@ footer > a:visited {
 @media screen and (max-width: 320px) {
     #post_title, .home_item_title {
         font-size: 1.4em;
-    }
-
-    header > h3 > small {
-        font-size: 12px;
     }
 }
