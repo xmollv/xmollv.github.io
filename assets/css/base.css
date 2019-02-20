@@ -18,6 +18,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: rgb(27, 149, 224);
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -25,6 +29,7 @@ img {
     margin-right: auto;
 }
 
+/* Header */
 header {
     background: rgba(0, 0, 0, 0.03);
 }
@@ -39,10 +44,6 @@ header > h3 {
 
 header > h3 > small {
     color: rgb(60, 60, 60);
-}
-
-a:visited {
-    color: rgb(27, 149, 224);
 }
 
 /* Home */
@@ -87,10 +88,7 @@ article {
 
 #goodbye {
     font-size: 12px;
-    line-height: 1.5em;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 /* Single-line code blocks */
@@ -142,28 +140,16 @@ footer > a:visited {
 
 @media screen and (max-width: 450px) {
     #post_title, .home_item_title {
-        font-size: 1.5em;
-    }
-
-    body {
-        font-size: 15px;
+        font-size: 1.6em;
     }
 }
 
 @media screen and (max-width: 320px) {
     #post_title, .home_item_title {
-        font-size: 1.2em;
-    }
-
-    body {
-        font-size: 14px;
+        font-size: 1.4em;
     }
 
     header > h3 > small {
-        font-size: 12px;
-    }
-
-    pre.highlight {
         font-size: 12px;
     }
 }
