@@ -5,7 +5,7 @@ body {
     color: #1e1e1e;
 	font-family: -apple-system, 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.8em;
 }
 
@@ -86,7 +86,7 @@ article {
 }
 
 #goodbye {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.5em;
     text-align: center;
     padding-top: 1em;
@@ -105,7 +105,7 @@ code.highlighter-rouge {
 pre.highlight {
     background: #f6f8fa;
     overflow: auto;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
