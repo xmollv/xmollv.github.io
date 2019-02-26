@@ -5,7 +5,7 @@ body {
     color: #1e1e1e;
 	font-family: -apple-system, 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.8em;
 }
 
@@ -97,7 +97,7 @@ article {
 }
 
 #goodbye {
-    font-size: 12px;
+    font-size: 0.95em;
     text-align: center;
 }
 
@@ -113,7 +113,7 @@ code.highlighter-rouge {
 pre.highlight {
     background: #f6f8fa;
     overflow: auto;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
@@ -142,20 +142,28 @@ footer > a:visited {
 }
 
 /* Media queries */
-@media screen and (max-width: 600px) {
-    #post_title, .home_item_title {
-        font-size: 2em;
-    }
-}
-
 @media screen and (max-width: 450px) {
     #post_title, .home_item_title {
         font-size: 1.6em;
     }
 }
 
+@media screen and (max-width: 375px) {
+    #post_title, .home_item_title {
+        font-size: 1.5em;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     #post_title, .home_item_title {
-        font-size: 1.4em;
+        font-size: 1.3em;
+    }
+
+    body {
+        font-size: 14px;
     }
 }
