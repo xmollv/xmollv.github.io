@@ -11,10 +11,10 @@
 
 html {
 	background: #fff;
+	color: #111;
 	font-size: 20px;
 	font-family: "Whitney A", Helvetica, sans-serif;
 	line-height: 1.6em;
-	color: #111;
 }
 
 a {
@@ -39,7 +39,7 @@ img {
 
 #content {
 	max-width: 650px;
-	margin: 50px auto;
+	margin: 0 auto;
 	padding: 0px 16px;
 }
 
