@@ -49,6 +49,7 @@ img {
 	border-radius: 50%;
 	background-image: linear-gradient(rgb(186, 62, 138), #fba051);
 	float: right;
+	margin-left: 8px;
 }
 
 #headshot {
