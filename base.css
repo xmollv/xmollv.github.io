@@ -1,8 +1,19 @@
+@font-face {
+  font-family: "Whitney A";
+  src: url("assets/font.ttf");
+}
+
+@font-face {
+  font-family: "Whitney A";
+  src: url("assets/fontbold.ttf");
+  font-weight: bold;
+}
+
 html {
 	background: #fff;
-	font-size: 15px;
-	font-family: "Open Sans", Helvetica, sans-serif;
-	line-height: 1.7em;
+	font-size: 20px;
+	font-family: "Whitney A", Helvetica, sans-serif;
+	line-height: 1.6em;
 }
 
 body {
