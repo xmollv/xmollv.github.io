@@ -40,23 +40,24 @@ img {
 #content {
 	max-width: 650px;
 	margin: 0 auto;
-	padding: 0px 16px;
+	padding: 0px 8px;
 }
 
 #headshot_container {
-	width: 114px;
-	height: 152px;
-	border-radius: 10px;
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
 	background-image: linear-gradient(rgb(186, 62, 138), #fba051);
 	float: left;
-	margin-right: 16px;
+	margin-right: 8px;
 	margin-top: 4px;
+	margin-bottom: -4px;
 }
 
 #headshot {
-	width: 100px;
-	height: 138px;
-	border-radius: 10px;
+	width: 114px;
+	height: 114px;
+	border-radius: 50%;
 	border: 4px solid #fff;
 	margin-top: 3px;
 }
