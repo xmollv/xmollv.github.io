@@ -61,3 +61,12 @@ img {
 	border: 4px solid #fff;
 	margin-top: 3px;
 }
+
+.app_store_badge_container {
+	text-align: center;
+}
+
+.app_store_badge {
+	max-width: 120px;
+	max-height: 40px;
+}
