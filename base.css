@@ -1,24 +1,18 @@
-@font-face {
-  font-family: "Whitney A";
-  src: url("assets/font.ttf");
-}
-
-@font-face {
-  font-family: "Whitney A";
-  src: url("assets/fontbold.ttf");
-  font-weight: bold;
-}
-
 html {
 	background: #fff;
-	color: #111;
+	color: rgb(55, 55, 55);
 	font-size: 20px;
-	font-family: "Whitney A", Helvetica, sans-serif;
+	font-family: -apple-system, sans-serif;
 	line-height: 1.6em;
+	text-align: justify;
+}
+
+body {
+	margin: 0px;
 }
 
 a {
-	color: #009cdf;
+	color: rgba(91, 138, 176, 1);
 	text-decoration: none;
 }
 
@@ -26,8 +20,12 @@ a:hover {
 	text-decoration: underline;	
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(35, 35, 35);
+}
+
 h1 {
-	font-size: 300%;
+	font-size: 2.75em;
 }
 
 img {
@@ -40,24 +38,61 @@ img {
 #content {
 	max-width: 650px;
 	margin: 0 auto;
-	padding: 0px 8px;
+	padding: 0px 16px;
+}
+
+header {
+	padding-top: 20px;
+}
+
+header > h1 {
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#menu {
+    max-width: 650px;
+	margin: 0 auto;
+    text-align:center;
+}
+#menu > a {
+    width: calc(100% / 4);
+    display: inline-block;
+    vertical-align: top;   
+    text-align: center;
+    padding: 0px 4px 0px 4px;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(91, 138, 176, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#menu > a:hover {
+	text-decoration: none;	
 }
 
 #headshot_container {
-	width: 128px;
-	height: 128px;
-	border-radius: 50%;
-	background-image: linear-gradient(rgb(186, 62, 138), #fba051);
+	width: 243.25px;
+	height: 324.25px;
 	float: left;
-	margin-right: 8px;
+	margin-right: 16px;
+	padding-top: 8px;
 }
 
 #headshot {
-	width: 114px;
-	height: 114px;
-	border-radius: 50%;
-	border: 4px solid #fff;
-	margin-top: 3px;
+	border-radius: 8px;
+}
+
+@media only screen and (max-width: 414px) {
+  	#headshot_container {
+		width: 162.16px;
+		height: 216.16px;
+	}
 }
 
 .app_store_badge_container {
@@ -67,4 +102,20 @@ img {
 .app_store_badge {
 	max-width: 120px;
 	max-height: 40px;
+}
+
+#footer_menu {
+    max-width: 650px;
+	margin: 0 auto;
+    text-align:center;
+}
+#footer_menu > a {
+    width: 24px;
+    display: inline-block;
+    vertical-align: top;   
+    text-align: center;
+    padding: 0px 4px 0px 4px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
