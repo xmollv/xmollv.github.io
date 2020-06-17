@@ -29,6 +29,14 @@ header > h1 {
 	text-align: center;
 }
 
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
 p {
 	font-size: 1.1em;
 }
@@ -72,14 +80,16 @@ article {
 	height: 259px;
 	border-radius: 8px;
 	float: left;
-	margin-right: 8px;
+	margin-right: 12px;
 }
 
 #footer_menu {
     max-width: 650px;
 	margin: 0 auto;
-    text-align:center;
+    text-align: center;
+    padding-top: 24px;
 }
+
 #footer_menu > a {
     width: 24px;
     display: inline-block;
@@ -90,13 +100,3 @@ article {
     margin-left: 2%;
     margin-right: 2%;
 }
-
-/*
-.app_store_badge_container {
-	text-align: center;
-}
-
-.app_store_badge {
-	max-width: 120px;
-	max-height: 40px;
-}*/
