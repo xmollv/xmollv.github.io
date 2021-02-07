@@ -18,7 +18,7 @@ html {
 header {
 	position: fixed;
 	width: 100%;
-	background: rgb(255, 255, 255);
+	background: rgb(252, 252, 252);
 	border-bottom: 1px solid #ececec;
 }
 
@@ -84,10 +84,13 @@ article {
 }
 
 #footer_menu {
-    max-width: 650px;
-	margin: 0 auto;
+	position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgb(252, 252, 252);
     text-align: center;
-    padding-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #ececec;
 }
 
 #footer_menu > a {
@@ -96,7 +99,7 @@ article {
     vertical-align: top;   
     text-align: center;
     padding: 0px 4px 0px 4px;
-    margin-bottom: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-bottom: 8px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
