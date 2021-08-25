@@ -1,106 +1,83 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
 html {
 	background: rgb(255, 255, 255);
 	color: rgb(34, 34, 34);
-	font-family: "Source Sans Variable", -apple-system, sans-serif;
-	line-height: 1.5em;
+	font-family: -apple-system, sans-serif;
 }
 
-header {
-	position: fixed;
-	width: 100%;
-	background: rgb(252, 252, 252);
-	border-bottom: 1px solid #ececec;
+main {
+	max-width: 650px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
-header > h1 {
-	margin-top: 16px;
-	margin-bottom: 16px;
+h1 {
 	font-size: 3em;
-	text-align: center;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-p {
-	font-size: 1.1em;
+	line-height: 1.1em;
+	margin-bottom: 16px;
 }
 
 a {
-	color: rgba(91, 138, 176, 1);
+	color: rgb(91, 138, 176);
 	text-decoration: none;
 }
 
-article {
-	max-width: 650px;
-	margin: 0 auto;
-	padding-top: 108px;
-	padding-bottom: calc(env(safe-area-inset-bottom) + 68px);
+hr {
+	height:1px;
+	width:50%;
+	margin:10px auto 10px auto;
+	background-color: #DCDCDC;
+    border: 0;
+}
+
+ul {
 	padding-left: 16px;
-	padding-right: 16px;
-	text-align: justify;
 }
 
-#menu {
-    max-width: 650px;
-	margin: 0 auto;
-    text-align: center;
-    padding-bottom: 8px;
-}
-
-#menu > a {
-    width: calc(100% / 4);
-    display: inline-block;
-    vertical-align: top;
-    font-weight: 700;
-    color: rgb(34, 34, 34);
-}
-
-#menu > a:hover {
-	color: rgb(84, 84, 84);
+ul > li {
+	line-height: 1.4em;
 }
 
 #headshot {
-	width: 194px;
-	height: 259px;
+	width: 180px;
+	height: 180px;
 	border-radius: 8px;
 	float: left;
-	margin-right: 12px;
+	margin-right: 8px;
 }
 
-#footer_menu {
-	position: fixed;
-    width: 100%;
-    bottom: 0;
-    background: rgb(252, 252, 252);
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    border-top: 1px solid #ececec;
+#about > div > p {
+	font-size: 1.2em;
+	line-height: 1.4em;
 }
 
-#footer_menu > a {
-    width: 24px;
-    display: inline-block;
-    vertical-align: top;   
-    text-align: center;
-    padding: 0px 4px 0px 4px;
-    margin-bottom: 8px;
-    margin-left: 3%;
-    margin-right: 3%;
+#apps > div {
+	height: 107px;
+	padding: 16px 16px 10px 16px;
+	background-color: rgb(245, 245, 245);
+	border-radius: 8px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+#apps > div > a > figure {
+	width: 87px;
+	margin: 0px 16px 0px 0px;
+	float: left;
+}
+
+#apps > div > a > figure > img {
+	height: 87px;
+	border-radius: 12px;
+}
+
+#apps > div > a > figure > figcaption {
+	text-align: center;
+	color: black;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+#books {
+	clear: both;
+  	display: table;
 }

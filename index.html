@@ -4,59 +4,147 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Xavi Moll - iOS Developer">
-        <meta property="og:url" content="https://xmollv.io/">
+        <meta property="og:url" content="https://xmollv.io">
         <meta property="og:image" content="https://xmollv.io/assets/headshot.jpeg">
         <meta property="og:site_name" content="Xavi Moll - iOS Developer">
         <meta property="og:description" content="Xavi Moll's website.">
-        <link rel="stylesheet" href="source-sans-pro-3.006R/source-sans-variable.css">
         <link rel="stylesheet" href="base.css">
-        <link rel="javascript" type="text/css" href="">
-        <script src="javascript.js"></script>
         <title>Xavi Moll - iOS Developer</title>
     </head>
-    <body onscroll="calculate_top()">
+    <body>
         <main>
-            <header>
-                <h1>Xavi Moll</h1>
-                <div id="menu">
-                    <a href="/">ABOUT</a>
-                    <a href="/projects">PROJECTS</a>
-                    <a href="/reading">READING</a>
-                </div>
-            </header>
-
-            <article>
-                <a href="https://twitter.com/xmollv">
+            <section id="about">
+                <h1>Howdy! I'm Xavi Moll 👋</h1>
+                <div>
                     <img id="headshot" src="assets/headshot.jpeg">
-                </a>
+                    <p>I'm an iOS Developer based in 🇪🇸 who has been building apps since 2015, currently working as a Lead at <a href="https://www.fws.io" style="color: rgb(168, 39, 33);">Future Workshops</a>. I also build indie apps on my spare time, make sure to give them a try!</p>
+                    <p>I love listening to podcasts, reading, hiking, taking pictures & investing.</p>
+                    <p>📬 Feel free to connect with me via <a href="https://twitter.com/xmollv" style="color: rgb(29, 161, 242);">Twitter</a>, <a href="https://github.com/xmollv" style="color: rgb(46, 168, 79);">GitHub</a>, <a href="https://www.linkedin.com/in/xmollv" style="color: rgb(40, 103, 178);">LinkedIn</a> or <a href="xmollv@gmail.com">Email</a>.</p>
+                </div>
+            </section>
 
-                <p>Howdy! I'm an iOS Developer currently working as a Lead at <a href="https://www.futureworkshops.com">Future Workshops</a>. I was born and raised in Menorca, but I decided to move to Barcelona in 2015. That same year I started writing apps for the iPhone and the iPad, and I've been building iOS apps full-time since then. Still loving it.</p>
-                <br>
-                <p>My bread & butter is Swift, even though I've been writing Objective-C on frameworks and legacy apps. When Swift became ABI stable, I started porting a lot of Objective-C code to Swift.</p>
-                <br>
-                <p>I keep <a href="https://en.wikipedia.org/wiki/KISS_principle">my code as simple as possible</a>, and I try to keep the usage of third party dependencies to a minimum. I'm not fond of using VIPER, MVVM, MVP or the <a href="https://iosarchitecture.top">new hot architectural pattern</a> that's trendy this week without a compelling reason.</p>
-                <br>
-                <p>At the time of this writing, I tend to work using <a href="http://khanlou.com/2015/01/the-coordinator/">MVC + Coordinators</a> as my architectural pattern. For building the UI I don't have a strong opinion, I tend to use what feels right for that view, either code or XIBs. My model layer is always CoreData because it's great once you know the gotchas!</p>
-                <br>
-                <p>I'm also a firm believer in following the <a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/">Human Interface Guidelines</a> when building UIs for Apple platforms. They're there for a <a href="https://developer.apple.com/design/awards/">reason</a>.</p>
-            </article>
-            
-            <footer>
-                <div id="footer_menu">
-                    <a href="https://twitter.com/xmollv">
-                        <svg version="1.1" id="Layer_1" viewBox="0 0 56.693 56.693"><g><path d="M54.082,15.5495c-1.8115,0.8047-3.7597,1.3477-5.8051,1.5913c2.0874-1.25,3.6894-3.2305,4.4443-5.5918 c-1.9531,1.1587-4.1152,2-6.418,2.4536c-1.8432-1.9643-4.4702-3.1919-7.3769-3.1919c-5.5816,0-10.1069,4.5254-10.1069,10.107 c0,0.792,0.0893,1.563,0.2617,2.3027c-8.3999-0.4209-15.8477-4.4443-20.8325-10.5596c-0.8697,1.4922-1.3682,3.2281-1.3682,5.0811 c0,3.5063,1.7842,6.5996,4.4961,8.4126c-1.6563-0.0532-3.2154-0.5073-4.5777-1.2647c-0.0009,0.042-0.0009,0.0845-0.0009,0.128 c0,4.896,3.4839,8.9809,8.1079,9.9101c-0.8482,0.2305-1.7412,0.3545-2.6631,0.3545c-0.6519,0-1.2847-0.063-1.9019-0.1816 c1.2867,4.0151,5.0191,6.9375,9.441,7.019c-3.459,2.711-7.8165,4.3267-12.5523,4.3267c-0.8154,0-1.6196-0.0484-2.4106-0.1411 c4.4736,2.8681,9.7856,4.541,15.4931,4.541c18.5908,0,28.7559-15.4009,28.7559-28.7569c0-0.4375-0.0088-0.8745-0.0283-1.3076 C51.0137,19.3571,52.728,17.5769,54.082,15.5495z"></path></g></svg>
+            <section id="apps">
+                <h2>👨🏼‍💻 Indie Apps</h2>
+                <div>
+                    <a href="https://itunes.apple.com/app/id1507396839">
+                        <figure>
+                            <img src="assets/appicon_abyss.png"/>
+                            <figcaption>Abyss</figcaption>
+                        </figure>
                     </a>
-                    <a href="https://github.com/xmollv">
-                        <svg viewBox="0 0 16 16" version="1.1"><g stroke="none" stroke-width="1" transform="translate(-92.000000, -348.000000)"><path d="M92,356.202917 C92,359.826905 94.2920286,362.901026 97.4710089,363.986157 C97.8712668,364.061185 98.0171276,363.807904 98.0171276,363.590374 C98.0171276,363.396007 98.010252,362.879877 98.0063231,362.195564 C95.781086,362.691049 95.3115811,361.095829 95.3115811,361.095829 C94.9476657,360.148164 94.423156,359.89589 94.423156,359.89589 C93.6967986,359.387313 94.4781608,359.397384 94.4781608,359.397384 C95.281132,359.455291 95.70349,360.24283 95.70349,360.24283 C96.4170785,361.496145 97.5761073,361.134098 98.031861,360.924122 C98.1045459,360.394396 98.3108137,360.032853 98.5396728,359.827912 C96.7633138,359.620956 94.8956076,358.917005 94.8956076,355.773899 C94.8956076,354.878602 95.2074649,354.146453 95.7192056,353.572919 C95.6366985,353.36546 95.3621658,352.531596 95.7972927,351.402152 C95.7972927,351.402152 96.4691366,351.181601 97.997483,352.243066 C98.63544,352.060784 99.3200528,351.970147 100.000246,351.967126 C100.679456,351.970147 101.364069,352.060784 102.003008,352.243066 C103.530372,351.181601 104.200743,351.402152 104.200743,351.402152 C104.637343,352.531596 104.36281,353.36546 104.280303,353.572919 C104.793026,354.146453 105.102919,354.878602 105.102919,355.773899 C105.102919,358.925062 103.232266,359.618439 101.450014,359.821366 C101.737315,360.074647 101.993186,360.575167 101.993186,361.34055 C101.993186,362.43676 101.983364,363.321483 101.983364,363.590374 C101.983364,363.809918 102.12726,364.065213 102.533411,363.98515 C105.709936,362.898004 108,359.825898 108,356.202917 C108,351.672554 104.417815,348.000226 99.9992633,348.000226 C95.5816937,348.000226 92,351.672554 92,356.202917 Z" id="Page-1"></path></g></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/xmollv">
-                        <svg viewBox="0 0 512 512"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
-                    </a>
-                    <a href="mailto:xmollv@gmail.com">
-                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106 C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787 L338.213,256L482,112.212V399.787z"/></g></g></svg>
+                    <a href="https://itunes.apple.com/app/id1355340767">
+                        <figure>
+                            <img src="assets/appicon_llitgi.png"/>
+                            <figcaption>Llitgi</figcaption>
+                        </figure>
                     </a>
                 </div>
-            </footer>
+            </section>
+
+            <section id="books">
+                <h2>📚 Reading</h2>
+                <h3>2021</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Tribes+Seth+Godin"><b>Tribes</b></a> by Seth Godin</li>
+                    <li><a href="https://www.google.com/search?q=Anger+Thich+Nhat+Hanh"><b>Anger</b></a> by Thich Nhat Hanh</li>
+                    <li><a href="https://www.google.com/search?q=The+Dip+Seth+Godin"><b>The Dip</b></a> by Seth Godin</li>
+                    <li><a href="https://www.google.com/search?q=Sprint+Jake+Knapp"><b>Sprint</b></a> by Jake Knapp</li>
+                    <li><a href="https://www.google.com/search?q=Atomic+Habits+James+Clear"><b>Atomic Habits</b></a> by James Clear</li>
+                    <li><a href="https://www.google.com/search?q=Make+Time+Jake+Knapp+and+John+Zeratsky"><b>Make Time</b></a> by Jake Knapp and John Zeratsky</li>
+                    <li><a href="https://www.google.com/search?q=Menos+costes+mas+rentabilidad+Unai+Ansejo"><b>Menos costes, más rentabilidad</b></a> by Unai Ansejo</li>
+                    <li><a href="https://www.google.com/search?q=The+Daily+Stoic+Ryan+Holiday"><b>The Daily Stoic</b></a> by Ryan Holiday</li>
+                    <li><a href="https://www.google.com/search?q=A+Random+Walk+Down+Wall+Street+Burton+Malkiel"><b>A Random Walk Down Wall Street</b></a> by Burton G. Malkiel</li>
+                    <hr>
+                    <li><a href="https://www.google.com/search?q=A+Combine+Kickstart+Daniel+H+Steinberg"><b>A Combine Kickstart</b></a> by Daniel H Steinberg</li>
+                    <li><a href="https://www.google.com/search?q=A+Functional+Programming+Kickstart+Daniel+H+Steinberg"><b>A Functional Programming Kickstart</b></a> by Daniel H Steinberg</li>
+                    <li><a href="https://www.google.com/search?q=Thinking+in+SwiftUI+Chris+Eidhof+and+Florian+Kugler"><b>Thinking in SwiftUI</b></a> by Chris Eidhof and Florian Kugler</li>
+                </ul>
+                <h3>2020</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Becoming+Who+We+Need+To+Be+Colin+Wright"><b>Becoming Who We Need To Be</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=On+the+Shortness+of+Life+Seneca"><b>On The Shortness Of Life</b></a> by Seneca</li>
+                    <li><a href="https://www.google.com/search?q=The+Intelligent+Investor+Benjamin+Graham"><b>The Intelligent Investor</b></a> by Benjamin Graham</li>
+                    <li><a href="https://www.google.com/search?q=Letters+from+a+Stoic+Epistulae+Morales+Ad+Lucilium+Seneca"><b>Letters from a Stoic</b></a> by Seneca</li>
+                    <li><a href="https://www.google.com/search?q=Never+Split+The+Difference+Chris+Voss"><b>Never Split the Difference</b></a> by Chris Voss</li>
+                    <li><a href="https://www.google.com/search?q=Rich+Dad+Poor+Dad+Robert+T.+Kiyosaki"><b>Rich Dad Poor Dad</b></a> by Robert T. Kiyosaki</li>
+                    <li><a href="https://www.google.com/search?q=Common+Sense+on+Mutual+Funds+John+C.+Bogle"><b>Common Sense on Mutual Funds</b></a> by John C. Bogle</li>
+                    <li><a href="https://www.google.com/search?q=Do+The+Work+Steven+Pressfield"><b>Do The Work</b></a> by Steven Pressfield</li>
+                    <li><a href="https://www.google.com/search?q=Turning+Pro+Steven+Pressfield"><b>Turning Pro</b></a> by Steven Pressfield</li>
+                    <li><a href="https://www.google.com/search?q=Principles+Ray+Dalio"><b>Principles</b></a> by Ray Dalio</li>
+                    <li><a href="https://www.google.com/search?q=The+War+of+Art+Steven+Pressfield"><b>The War of Art</b></a> by Steven Pressfield</li>
+                    <li><a href="https://www.google.com/search?q=The+Millionaire+Next+Door+Thomas+Stanley+and+William+Danko"><b>The Millionaire Next Door</b></a> by Thomas Stanley and William Danko</li>
+                    <li><a href="https://www.google.com/search?q=Anything+You+Want+Derek+Sivers"><b>Anything You Want</b></a> by Derek Sivers</li>
+                    <li><a href="https://www.google.com/search?q=The+Little+Book+of+Stoicism+Jonas+Salzgeber"><b>The Little Book of Stoicism</b></a> by Jonas Salzgeber</li>
+                    <li><a href="https://www.google.com/search?q=Come+Back+Frayed+Colin+Wright"><b>Come Back Frayed</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Meditations+Marcus+Aurelius"><b>Meditations</b></a> by Marcus Aurelius</li>
+                    <li><a href="https://www.google.com/search?q=The+Power+of+Now+Eckhart+Tolle"><b>The Power of Now</b></a> by Eckhart Tolle</li>
+                    <li><a href="https://www.google.com/search?q=The+Manual+Epictetus"><b>The Manual</b></a> by Epictetus</li>
+                    <li><a href="https://www.google.com/search?q=A+Tale+Of+More+Colin+Wright"><b>A Tale Of More</b></a> by Colin Wright</li>
+                </ul>
+                <h3>2019</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Essentialism+Greg+McKeown"><b>Essentialism</b></a> by Greg McKeown</li>
+                    <li><a href="https://www.google.com/search?q=21+Lessons+for+the+21st+Century+Yuval+Noah+Harari"><b>21 Lessons for the 21st Century</b></a> by Yuval Noah Harari</li>
+                    <li><a href="https://www.google.com/search?q=Puncture+Up+Colin+Wright"><b>Puncture Up</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Homo+Deus+Yuval+Noah+Harari"><b>Homo Deus</b></a> by Yuval Noah Harari</li>
+                    <li><a href="https://www.google.com/search?q=Why+We+Sleep+Matthew+Walker"><b>Why We Sleep</b></a> by Matthew Walker</li>
+                    <li><a href="https://www.google.com/search?q=The+Minimalist+Home+Joshua+Becker"><b>The Minimalist Home</b></a> by Joshua Becker</li>
+                    <li><a href="https://www.google.com/search?q=Sapiens+Yuval+Noah+Harari"><b>Sapiens</b></a> by Yuval Noah Harari</li>
+                    <li><a href="https://www.google.com/search?q=Some+Thoughts+About+Relationships+Colin+Wright"><b>Some Thoughts About Relationships</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Considerations+Colin+Wright"><b>Considerations</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=The+Subtle+Art+Of+Not+Giving+A+Fuck+Mark+Manson"><b>The Subtle Art Of Not Giving A Fuck</b></a> by Mark Manson</li>
+                    <li><a href="https://www.google.com/search?q=Real+Powers+Colin+Wright"><b>Real Powers</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=The+Master+Switch+Tim+Wu"><b>The Master Switch</b></a> by Tim Wu</li>
+                    <li><a href="https://www.google.com/search?q=Ordovician+Colin+Wright"><b>Ordovician</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Mean+Universe+Colin+Wright"><b>Mean Universe</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Quiet+Susan+Cain"><b>Quiet</b></a> by Susan Cain</li>
+                </ul>
+                <h3>2018</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Remote+David+Heinemeier+Hansson+and+Jason+Fried"><b>Remote</b></a> by David Heinemeier Hansson and Jason Fried</li>
+                    <li><a href="https://www.google.com/search?q=So+This+Is+How+I+Go+Colin+Wright"><b>So This Is How I Go</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Coffee+with+the+Other+Man+Colin+Wright"><b>Coffee with the Other Man</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=It+Doesn't+Have+to+Be+Crazy+at+Work+David+Heinemeier+Hansson+and+Jason+Fried"><b>It Doesn’t Have to Be Crazy at Work</b></a> by David Heinemeier Hansson and Jason Fried</li>
+                    <li><a href="https://www.google.com/search?q=7+or+8+More+Ways+to+End+the+World+Colin+Wright"><b>7 or 8 More Ways to End the World</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=7+or+8+Ways+to+End+the+World+Colin+Wright"><b>7 or 8 Ways to End the World</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=ReWork+David+Heinemeier+Hansson+and+Jason+Fried"><b>ReWork</b></a> by David Heinemeier Hansson and Jason Fried</li>
+                    <li><a href="https://www.google.com/search?q=Iceland+India+Interstate+Colin+Wright"><b>Iceland India Interstate</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Act+Accordingly+Colin+Wright"><b>Act Accordingly</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=My+Exile+Lifestyle+Colin+Wright"><b>My Exile Lifestyle</b></a> by Colin Wright</li>
+                    <li><a href="https://www.google.com/search?q=Soulful+Simplicity+Courtney+Carver"><b>Soulful Simplicity</b></a> by Courtney Carver</li>
+                    <li><a href="https://www.google.com/search?q=The+Total+Money+Makeover+Dave+Ramsey"><b>The Total Money Makeover</b></a> by Dave Ramsey</li>
+                    <li><a href="https://www.google.com/search?q=Mindless+Eating+Brian+Wansink"><b>Mindless Eating</b></a> by Brian Wansink</li>
+                    <li><a href="https://www.google.com/search?q=The+More+of+Less+Joshua+Becker"><b>The More of Less</b></a> by Joshua Becker</li>
+                    <li><a href="https://www.google.com/search?q=10%+Happier+Dan+Harris"><b>10% Happier</b></a> by Dan Harris</li>
+                    <li><a href="https://www.google.com/search?q=Stuffocation:+Living+More+with+Less+James+Wallman"><b>Stuffocation: Living More with Less</b></a> by James Wallman</li>
+                    <li><a href="https://www.google.com/search?q=Everything+That+Remains+Joshua+Fields+Millburn+and+Ryan+Nicodemus"><b>Everything That Remains</b></a> by Joshua Fields Millburn and Ryan Nicodemus</li>
+                    <li><a href="https://www.google.com/search?q=Essential+Joshua+Fields+Millburn+and+Ryan+Nicodemus"><b>Essential</b></a> by Joshua Fields Millburn and Ryan Nicodemus</li>
+                    <li><a href="https://www.google.com/search?q=Minimalism+Joshua+Fields+Millburn+and+Ryan+Nicodemus"><b>Minimalism</b></a> by Joshua Fields Millburn and Ryan Nicodemus</li>
+                    <li><a href="https://www.google.com/search?q=The+Power+of+Habit+Charles+Duhigg"><b>The Power of Habit</b></a> by Charles Duhigg</li>
+                    <hr>
+                    <li><a href="https://www.google.com/search?q=Advanced+Swift+Chris Eidhof,+Ole+Begemann,+and+Airspeed+Velocity"><b>Advanced Swift</b></a> by Chris Eidhof, Ole Begemann, and Airspeed Velocity</li>
+                    <li><a href="https://www.google.com/search?q=Objective-C+for+Swift+Developers+Paul+Hudson"><b>Objective-C for Swift Developers</b></a> by Paul Hudson</li>
+                    <li><a href="https://www.google.com/search?q=Core+Data+Florian+Kugler+and+Daniel+Eggert"><b>Core Data</b></a> by Florian Kugler and Daniel Eggert</li>
+                </ul>
+                <h3>2017</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Programming+iOS+10+O+Reilly"><b>Programming iOS 10</b></a> by O'Reilly</li>
+                    <li><a href="https://www.google.com/search?q=Swift+Style+Erica+Sadun"><b>Swift Style</b></a> by Erica Sadun</li>
+                    <li><a href="https://www.google.com/search?q=Test-Driven+iOS+Development+Dr.+Dominik+Hauser"><b>Test-Driven iOS Development</b></a> by Dr. Dominik Hauser</li>
+                    <li><a href="https://www.google.com/search?q=Core+Data+Raywenderlich"><b>Core Data</b></a> by Raywenderlich</li>
+                </ul>
+                <h3>2016</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=iOS+Programming+The+Big+Nerd+Ranch"><b>iOS Programming</b></a> by The Big Nerd Ranch</li>
+                    <li><a href="https://www.google.com/search?q=Swift+Programming+The+Big+Nerd+Ranch"><b>Swift Programming</b></a> by The Big Nerd Ranch</li>
+                    <li><a href="https://www.google.com/search?q=Swift+Apprentice+Raywenderlich"><b>Swift Apprentice</b></a> by Raywenderlich</li>
+                    <li><a href="https://www.google.com/search?q=iOS+Apprentice+Raywenderlich"><b>iOS Apprentice</b></a> by Raywenderlich</li>
+                </ul>
+                <h3>2015</h3>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=Hacking+With+Swift+Paul+Hudson"><b>Hacking With Swift</b></a> by Paul Hudson</li>
+                </ol>
+            </section>
         </main>
     </body>
 </html>
