@@ -2,6 +2,7 @@ html {
 	background: rgb(255, 255, 255);
 	color: rgb(34, 34, 34);
 	font-family: -apple-system, sans-serif;
+	padding-bottom: 16px;
 }
 
 main {
@@ -15,6 +16,7 @@ h1 {
 	font-size: 3em;
 	line-height: 1.1em;
 	margin-bottom: 16px;
+	margin-top: 16px;
 }
 
 a {
