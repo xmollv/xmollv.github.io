@@ -45,7 +45,8 @@ ul > li {
 	height: 180px;
 	border-radius: 8px;
 	float: left;
-	margin-right: 8px;
+	margin-right: 12px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.05);
 }
 
 #about > div > p {
@@ -53,33 +54,35 @@ ul > li {
 	line-height: 1.4em;
 }
 
-#apps > div {
-	height: 107px;
-	padding: 16px 16px 10px 16px;
+.apps > div {
+	padding: 16px 8px 0px 8px;
 	background-color: rgb(245, 245, 245);
 	border-radius: 8px;
-	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.05);
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.02);
 }
 
-#apps > div > a > figure {
-	width: 87px;
-	margin: 0px 16px 0px 0px;
-	float: left;
+.apps > div > a > figure {
+	margin: 0px 4px 12px 4px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 68px;
 }
 
-#apps > div > a > figure > img {
-	height: 87px;
+.apps > div > a > figure > img {
+	width: 58px;
+	height: 58px;
 	border-radius: 12px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.05);
 }
 
-#apps > div > a > figure > figcaption {
+.apps > div > a > figure > figcaption {
 	text-align: center;
 	color: black;
-	font-size: 0.9em;
-	font-weight: 600;
+	font-size: 0.8em;
+	font-weight: 500;
 }
 
-#books {
-	clear: both;
-  	display: table;
+.reading > ul > li > a:hover {
+	text-decoration: underline;
 }
