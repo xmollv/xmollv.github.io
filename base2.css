@@ -34,6 +34,12 @@ main {
 	text-align: center;
 }
 
+#header > img {
+	border-radius: 100%;
+	width: 160px;
+	height: 160px;
+}
+
 #header > h1 {
 	font-size: 3em;
 }
@@ -44,10 +50,25 @@ main {
 	color: var(--secondaryTextColor);
 }
 
-#header > img {
-	border-radius: 100%;
-	width: 160px;
-	height: 160px;
+#header > div {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-top: 16px;
+}
+
+#header > div > a {
+	background: var(--elevatedBackgroundColor);
+	line-height: 32px;
+	border-radius: 16px;
+	color: var(--textColor);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#header > div > a:hover {
+	background: rgb(85, 85, 85);
 }
 
 .apps {
