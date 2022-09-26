@@ -27,6 +27,11 @@ main {
  	padding: 24px;	
 }
 
+a {
+	text-decoration: none;
+	color: var(--textColor);
+}
+
 #header {
 	background: var(--raisedBackgroundColor);
 	padding: 16px;
@@ -55,14 +60,13 @@ main {
 	grid-gap: 32px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	padding-top: 16px;
+	padding-bottom: 8px;
 }
 
 #header > div > a {
 	background: var(--elevatedBackgroundColor);
 	line-height: 32px;
 	border-radius: 16px;
-	color: var(--textColor);
-	text-decoration: none;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -95,7 +99,7 @@ main {
 	font-size: 16px;
 }
 
-.app > div > img {
+.app > div > a > img {
 	width: 58px;
 	height: 58px;
 	border-radius: 12px;
