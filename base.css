@@ -7,9 +7,9 @@
 /* Colors */
 :root {
 	--backgroundColor: #000;
-	--elevatedBackgroundColor: rgb(37, 37, 37);
+	--elevatedBackgroundColor: rgb(28, 28, 30);
 	--textColor:  #FFF;
-	--secondaryTextColor: rgb(153, 153, 153);
+	--secondaryTextColor: rgb(153, 152, 159);
 }
 
 /* Styles */
