@@ -1,0 +1,85 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+	--backgroundColor: rgb(247, 247, 247);
+	--textColor:  #000;
+	--secondaryTextColor: rgb(153, 153, 153);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--backgroundColor:  #000;
+		--textColor:  #FFF;
+	}
+}
+
+/* Styles */
+
+html {
+	font-family: -apple-system, sans-serif;
+	font-size: 18px;
+	background: var(--backgroundColor);
+	color: var(--textColor);
+}
+
+main {
+	max-width: 600px;
+ 	margin: auto;
+ 	padding: 24px;	
+}
+
+#header {
+	background: var(--raisedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#header > h1 {
+	font-size: 3em;
+}
+
+#header > p {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--secondaryTextColor);
+}
+
+#header > img {
+	border-radius: 100%;
+	width: 160px;
+	height: 160px;
+}
+
+section {
+	padding-bottom: 32px;
+}
+
+.apps > p {
+	color: var(--secondaryTextColor);
+}
+
+.app > div {
+	display: flex;
+	align-items: center;
+}
+
+.app > div > div {
+	padding-right: 16px;
+}
+
+.app > div > div > p {
+	color: var(--secondaryTextColor);
+}
+
+.app > div > img {
+	width: 58px;
+	height: 58px;
+	border-radius: 12px;
+}
