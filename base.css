@@ -1,88 +1,106 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+	--backgroundColor: #000;
+	--elevatedBackgroundColor: rgb(37, 37, 37);
+	--textColor:  #FFF;
+	--secondaryTextColor: rgb(153, 153, 153);
+}
+
+/* Styles */
+
 html {
-	background: rgb(255, 255, 255);
-	color: rgb(34, 34, 34);
 	font-family: -apple-system, sans-serif;
-	padding-bottom: 16px;
+	font-size: 18px;
+	background: var(--backgroundColor);
+	color: var(--textColor);
 }
 
 main {
-	max-width: 650px;
-	margin: 0 auto;
-	padding-left: 16px;
-	padding-right: 16px;
-}
-
-h1 {
-	font-size: 3em;
-	line-height: 1.1em;
-	margin-bottom: 16px;
-	margin-top: 16px;
+	max-width: 600px;
+ 	margin: auto;
+ 	padding: 24px;	
 }
 
 a {
-	color: rgb(91, 138, 176);
 	text-decoration: none;
+	color: var(--textColor);
 }
 
-hr {
-	height:1px;
-	width:50%;
-	margin:10px auto 10px auto;
-	background-color: #DCDCDC;
-    border: 0;
-}
-
-ul {
-	padding-left: 16px;
-}
-
-ul > li {
-	line-height: 1.4em;
-}
-
-#headshot {
-	width: 180px;
-	height: 180px;
-	border-radius: 8px;
-	float: left;
-	margin-right: 12px;
-	box-shadow: 4px 4px 8px rgba(0,0,0,0.05);
-}
-
-#about > div > p {
-	font-size: 1.2em;
-	line-height: 1.4em;
-}
-
-.apps > div {
-	padding: 16px 8px 0px 8px;
-	background-color: rgb(245, 245, 245);
-	border-radius: 8px;
-	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.02);
-}
-
-.apps > div > a > figure {
-	margin: 0px 4px 12px 4px;
-	display: inline-block;
-	vertical-align: top;
+#header {
+	background: var(--raisedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
 	text-align: center;
-	width: 68px;
 }
 
-.apps > div > a > figure > img {
+#header > img {
+	border-radius: 100%;
+	width: 160px;
+	height: 160px;
+}
+
+#header > h1 {
+	font-size: 3em;
+}
+
+#header > p {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--secondaryTextColor);
+}
+
+#header > div {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+
+#header > div > a {
+	background: var(--elevatedBackgroundColor);
+	line-height: 32px;
+	border-radius: 16px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#header > div > a:hover {
+	background: rgb(85, 85, 85);
+}
+
+.apps {
+	background: var(--elevatedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
+}
+
+.apps > p {
+	color: var(--secondaryTextColor);
+}
+
+.app > div {
+	display: flex;
+	align-items: center;
+}
+
+.app > div > div {
+	padding-right: 16px;
+}
+
+.app > div > div > p {
+	color: var(--secondaryTextColor);
+	font-size: 16px;
+}
+
+.app > div > a > img {
 	width: 58px;
 	height: 58px;
 	border-radius: 12px;
-	box-shadow: 0px 0px 8px rgba(0,0,0,0.05);
-}
-
-.apps > div > a > figure > figcaption {
-	text-align: center;
-	color: black;
-	font-size: 0.8em;
-	font-weight: 500;
-}
-
-.reading > ul > li > a:hover {
-	text-decoration: underline;
 }
