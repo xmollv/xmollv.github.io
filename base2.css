@@ -6,16 +6,10 @@
 
 /* Colors */
 :root {
-	--backgroundColor: rgb(247, 247, 247);
-	--textColor:  #000;
+	--backgroundColor: #000;
+	--elevatedBackgroundColor: rgb(37, 37, 37);
+	--textColor:  #FFF;
 	--secondaryTextColor: rgb(153, 153, 153);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--backgroundColor:  #000;
-		--textColor:  #FFF;
-	}
 }
 
 /* Styles */
@@ -38,7 +32,6 @@ main {
 	padding: 16px;
 	border-radius: 12px;
 	text-align: center;
-	padding-bottom: 32px;
 }
 
 #header > h1 {
@@ -57,8 +50,10 @@ main {
 	height: 160px;
 }
 
-section {
-	padding-bottom: 32px;
+.apps {
+	background: var(--elevatedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
 }
 
 .apps > p {
@@ -76,6 +71,7 @@ section {
 
 .app > div > div > p {
 	color: var(--secondaryTextColor);
+	font-size: 16px;
 }
 
 .app > div > img {
