@@ -1,0 +1,106 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+	--backgroundColor: #000;
+	--elevatedBackgroundColor: rgb(37, 37, 37);
+	--textColor:  #FFF;
+	--secondaryTextColor: rgb(153, 153, 153);
+}
+
+/* Styles */
+
+html {
+	font-family: -apple-system, sans-serif;
+	font-size: 18px;
+	background: var(--backgroundColor);
+	color: var(--textColor);
+}
+
+main {
+	max-width: 600px;
+ 	margin: auto;
+ 	padding: 24px;	
+}
+
+a {
+	text-decoration: none;
+	color: var(--textColor);
+}
+
+#header {
+	background: var(--raisedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+#header > img {
+	border-radius: 100%;
+	width: 160px;
+	height: 160px;
+}
+
+#header > h1 {
+	font-size: 3em;
+}
+
+#header > p {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--secondaryTextColor);
+}
+
+#header > div {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+
+#header > div > a {
+	background: var(--elevatedBackgroundColor);
+	line-height: 32px;
+	border-radius: 16px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#header > div > a:hover {
+	background: rgb(85, 85, 85);
+}
+
+.apps {
+	background: var(--elevatedBackgroundColor);
+	padding: 16px;
+	border-radius: 12px;
+}
+
+.apps > p {
+	color: var(--secondaryTextColor);
+}
+
+.app > div {
+	display: flex;
+	align-items: center;
+}
+
+.app > div > div {
+	padding-right: 16px;
+}
+
+.app > div > div > p {
+	color: var(--secondaryTextColor);
+	font-size: 16px;
+}
+
+.app > div > a > img {
+	width: 58px;
+	height: 58px;
+	border-radius: 12px;
+}
