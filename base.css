@@ -5,11 +5,28 @@
 }
 
 /* Colors */
-:root {
-	--backgroundColor: #000;
-	--elevatedBackgroundColor: rgb(28, 28, 30);
-	--textColor:  #FFF;
-	--secondaryTextColor: rgb(153, 152, 159);
+
+
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  :root {
+		--backgroundColor: rgb(0, 0, 0);
+		--elevatedBackgroundColor: rgb(28, 28, 30);
+		--textColor:  rgb(255, 255, 255);
+		--secondaryTextColor: rgb(153, 152, 159);
+		--hoverButtonColor: rgb(85, 85, 85);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+  :root {
+		--backgroundColor: rgb(242, 241, 246);
+		--elevatedBackgroundColor: rgb(255, 255, 255);
+		--textColor:  rgb(0, 0, 0);
+		--secondaryTextColor: rgb(136, 136, 142);
+		--hoverButtonColor: rgb(230, 230, 230);
+	}
 }
 
 /* Styles */
@@ -72,12 +89,12 @@ a {
 }
 
 #header > div > a:hover {
-	background: rgb(85, 85, 85);
+	background: var(--hoverButtonColor);
 }
 
 .apps {
 	background: var(--elevatedBackgroundColor);
-	padding: 16px;
+	padding: 12px 16px 16px 16px;
 	border-radius: 12px;
 }
 
