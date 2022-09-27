@@ -60,6 +60,7 @@ a {
 	border-radius: 100%;
 	width: 160px;
 	height: 160px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #header > h1 {
@@ -120,4 +121,5 @@ a {
 	width: 58px;
 	height: 58px;
 	border-radius: 12px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
