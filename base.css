@@ -54,6 +54,9 @@ a {
 	font-weight: 600;
 	color: var(--secondaryTextColor);
 }
+#header > p > a {
+	color: var(--secondaryTextColor);
+}
 
 #header > div {
 	display: grid;
