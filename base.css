@@ -80,23 +80,17 @@ a {
 
 .apps {
 	background: var(--elevatedBackgroundColor);
-	padding: 16px 8px 16px 16px;
+	padding: 16px;
 	border-radius: 12px;
-}
-
-.apps > p {
-	color: var(--secondaryTextColor);
 }
 
 .app > div {
 	display: flex;
-	align-items: center;
-	margin-right: 12px;
-	margin-left: 12px;
+	align-items: top;
 }
 
-.app > div > div {
-	padding-right: 8px;
+.app > div > a {
+	padding-right: 12px;
 }
 
 .app > div > div > p {
