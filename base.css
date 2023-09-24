@@ -5,18 +5,27 @@
 }
 
 /* Colors */
-:root {
-	--backgroundColor: #000;
-	--elevatedBackgroundColor: rgb(28, 28, 30);
-	--textColor:  #FFF;
-	--secondaryTextColor: rgb(153, 152, 159);
+@media (prefers-color-scheme: light) {
+  :root {
+		--backgroundColor: rgb(242, 242, 247);
+		--elevatedBackgroundColor: rgb(255, 255, 255);
+		--textColor:  rgb(0, 0, 0);
+		--linkColor:  rgb(0, 122, 255);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+		--backgroundColor: rgb(0, 0, 0);
+		--elevatedBackgroundColor: rgb(28, 28, 30);
+		--textColor:  rgb(255, 255, 255);
+		--linkColor:  rgb(255, 159, 10);
+	}
 }
 
 /* Styles */
-
 html {
 	font-family: -apple-system, sans-serif;
-	font-size: 18px;
 	background: var(--backgroundColor);
 	color: var(--textColor);
 }
@@ -24,84 +33,28 @@ html {
 main {
 	max-width: 600px;
  	margin: auto;
- 	padding: 24px 12px 24px 12px;
+ 	padding: 16px;
 }
 
-a {
-	text-decoration: none;
-	color: var(--textColor);
-}
-
-#header {
-	background: var(--raisedBackgroundColor);
-	padding: 12px;
-	border-radius: 12px;
-	text-align: center;
-}
-
-#header > img {
-	border-radius: 100%;
-	width: 160px;
-	height: 160px;
-}
-
-#header > h1 {
-	font-size: 3em;
-}
-
-#header > p {
-	font-size: 1.2em;
-	font-weight: 600;
-	color: var(--secondaryTextColor);
-}
-#header > p > a {
-	color: var(--secondaryTextColor);
-}
-
-#header > div {
-	display: grid;
-	grid-gap: 12px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	padding-top: 16px;
-	padding-bottom: 8px;
-}
-
-#header > div > a {
-	background: var(--elevatedBackgroundColor);
-	line-height: 32px;
-	border-radius: 16px;
-	font-size: 14px;
-	font-weight: 600;
-}
-
-#header > div > a:hover {
-	background: rgb(85, 85, 85);
-}
-
-.apps {
+section {
 	background: var(--elevatedBackgroundColor);
 	padding: 16px;
-	border-radius: 12px;
-}
-
-.app > div {
+	border-radius: 16px;
 	display: flex;
 	align-items: top;
 }
 
-.app > div > a {
-	padding-right: 12px;
+img {
+	border-radius: 12px;
+	max-width: 40%;
+	object-fit: cover;
 }
 
-.app > div > div > p {
-	color: var(--secondaryTextColor);
-	font-size: 16px;
-	padding-top: 2px;
+section > div {
+	padding: 0px 16px 0px 16px;
 }
 
-.app > div > a > img {
-	width: 58px;
-	height: 58px;
-	border-radius: 22.5%;
-	border: 1px solid #333;
+a {
+	text-decoration: none;
+	color: var(--linkColor);
 }
