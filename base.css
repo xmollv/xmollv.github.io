@@ -25,7 +25,7 @@
 
 /* Styles */
 html {
-	font-family: -apple-system, sans-serif;
+	font-family: "Helvetica Neue",-apple-system, sans-serif;
 	background: var(--backgroundColor);
 	color: var(--textColor);
 }
@@ -38,20 +38,22 @@ main {
 
 section {
 	background: var(--elevatedBackgroundColor);
-	padding: 16px;
 	border-radius: 16px;
-	display: flex;
-	align-items: top;
+	padding: 16px;
+}
+
+h1 {
+	padding-bottom: 4px;
 }
 
 img {
 	border-radius: 12px;
-	max-width: 40%;
+	margin-right: 16px;
+	margin-bottom: 4px;
+	width: max(40%, 60px);
+	height: max(40%, 60px);
 	object-fit: cover;
-}
-
-section > div {
-	padding: 0px 16px 0px 16px;
+	float: left;
 }
 
 a {
