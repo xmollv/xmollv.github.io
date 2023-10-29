@@ -44,6 +44,7 @@ section {
 
 h1 {
 	font-size: 2em;
+	margin-bottom: 8px;
 }
 
 img {
@@ -59,4 +60,8 @@ img {
 a {
 	text-decoration: none;
 	color: var(--linkColor);
+}
+
+p {
+	line-height: 1.6em;
 }
