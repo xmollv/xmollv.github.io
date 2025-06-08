@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 -6px 8px 5px rgba(0,0,0,0.25);
+    background: #fff;
+}
+
+header > a {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+header > a > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    border-color: #e0e0e0;
+    border-width: 1px;
+    border-style: solid;
+}
+
+header > a > h1 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 8px;
+}
+
+main {
+    background: #FAFAFC;
+}
+
+#hero {
+    background: #fff;
+}
+
+#hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+#hero-content > img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+}
+
+#hero-content > h2 {
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 8px;
+}
+
+#hero-content > p {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+#hero-content > a > img {
+    margin-top: 16px;
+    width: 200px;
+    height: 60px;
+}
+
+#features {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.feature {
+    padding-bottom: 32px;
+    padding-top: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.feature > h2 {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+#last-feature {
+    border-bottom: none;
+}
+
+#footer-content {
+    text-align: center;
+}
+
+#footer-content > div {
+    display: inline-block;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+}
+
+#footer-content > div > h3 {
+    font-size: 14px;
+}
+
+#footer-content > div > ul {
+    list-style: none;
+}
+
+#footer-content > div > ul > li > a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 12px;
+}
+
+#footer-content > div > ul > li > a:hover {
+    text-decoration: underline;
+}
