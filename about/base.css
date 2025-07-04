@@ -9,6 +9,7 @@
   :root {
 		--backgroundColor: #F7F7F7;
 		--textColor:  #323232;
+		--navBorderColor: rgba(0, 0, 0, 0.1);
 	}
 }
 
@@ -16,6 +17,7 @@
   :root {
 		--backgroundColor: #131313;
 		--textColor:  #E5E5E5;
+		--navBorderColor: rgba(255, 255, 255, 0.1);
 	}
 }
 
@@ -26,6 +28,28 @@ html {
 	color: var(--textColor);
 	font-style: normal;
 	font-size: 22px;
+}
+
+#navbar {
+	display: flex;
+	padding-left: 24px;
+	padding-right: 24px;
+	position: sticky;
+  top: 0;
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid var(--navBorderColor);
+}
+
+#navbar:first-child {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	justify-content: space-between;
+}
+
+#navbar > div {
+	display: flex;
+	gap: 24px;
+	width: auto;
 }
 
 main {
