@@ -7,74 +7,58 @@
 /* Colors */
 @media (prefers-color-scheme: light) {
   :root {
-		--backgroundColor: rgb(242, 242, 247);
-		--elevatedBackgroundColor: rgb(255, 255, 255);
-		--textColor:  rgb(0, 0, 0);
-		--linkColor:  rgb(0, 122, 255);
+		--backgroundColor: #F7F7F7;
+		--textColor:  #323232;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-		--backgroundColor: rgb(0, 0, 0);
-		--elevatedBackgroundColor: rgb(28, 28, 30);
-		--textColor:  rgb(255, 255, 255);
-		--linkColor:  rgb(255, 159, 10);
+		--backgroundColor: #131313;
+		--textColor:  #E5E5E5;
 	}
 }
 
 /* Styles */
 html {
 	font-family: -apple-system, "Helvetica Neue", sans-serif;
-	background: var(--backgroundColor);
+	background-color: var(--backgroundColor);
 	color: var(--textColor);
+	font-style: normal;
+	font-size: 22px;
 }
 
 main {
-	max-width: 600px;
- 	margin: auto;
- 	padding: 24px;
-}
-
-section {
-	background: var(--elevatedBackgroundColor);
-	border-radius: 24px;
-	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 h1 {
-	font-size: 3em;
-	margin-top: -12px;
+	text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  color: #323232;
+  font-size: 8em;
+  margin-bottom: 8px;
 }
 
-h2 {
-	font-size: 2em;
-	margin-top: -8px;
+@media (max-width: 1300px) {
+	h1 {
+		font-size: 4em;
+	}
 }
 
-img {
-	border-radius: 14px;
-	margin-right: 12px;
-	margin-top: 6px;
-	width: max(35%, 60px);
-	height: max(35%, 60px);
-	object-fit: cover;
-	float: left;
+@media (max-width: 600px) {
+	h1 {
+		font-size: 3.5em;
+	}
 }
 
-a {
-	text-decoration: none;
-	color: var(--linkColor);
-}
-
-p {
-	line-height: 1.5em;
-}
-
-ol {
-	list-style: none;
-}
-
-ol > li {
-	margin-bottom: 6px;
+@media (max-width: 375px) {
+	h1 {
+		font-size: 3em;
+	}
 }
