@@ -1,10 +1,8 @@
-/* Global */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Colors */
 @media (prefers-color-scheme: light) {
   :root {
 		--backgroundColor: #F7F7F7;
@@ -21,7 +19,6 @@
 	}
 }
 
-/* Styles */
 html {
 	font-family: -apple-system, "Helvetica Neue", sans-serif;
 	background-color: var(--backgroundColor);
