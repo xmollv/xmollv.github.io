@@ -59,6 +59,7 @@ main {
 h1 {
 	font-size: 4.2rem;
 	font-weight: bold;
+	padding-bottom: 8px;
 }
 
 @media (max-width: 600px) {
@@ -85,4 +86,13 @@ a {
 
 a:hover {
 	color: #0088FF;
+}
+
+main > div > a > img {
+	border-radius: 12%;
+	margin-right: 12px;
+	margin-top: 6px;
+	width: max(25%, 60px);
+	height: max(25%, 60px);
+	float: left;
 }
