@@ -68,7 +68,7 @@ h1 {
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 	h1 {
 		font-size: 3em;
 	}
@@ -88,11 +88,15 @@ a:hover {
 	color: #0088FF;
 }
 
+main > p > a {
+	color: #0088FF;
+}
+
 main > div > a > img {
 	border-radius: 12%;
 	margin-right: 12px;
 	margin-top: 6px;
-	width: max(25%, 60px);
-	height: max(25%, 60px);
+	width: max(40%, 60px);
+	height: max(40%, 60px);
 	float: left;
 }
