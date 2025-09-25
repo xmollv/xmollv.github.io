@@ -61,10 +61,6 @@ header > a {
 header > a > img {
     width: 32px;
     height: 32px;
-    border-radius: 10px;
-    border-color: #e0e0e0;
-    border-width: 1px;
-    border-style: solid;
 }
 
 header > a > h1 {
