@@ -8,6 +8,7 @@
 		--backgroundColor: #F7F7F7;
 		--textColor:  #323232;
 		--navBorderColor: rgba(0, 0, 0, 0.1);
+		--cardBackgroundColor: #EFEFEF;
 	}
 }
 
@@ -16,6 +17,7 @@
 		--backgroundColor: #131313;
 		--textColor:  #E5E5E5;
 		--navBorderColor: rgba(255, 255, 255, 0.1);
+		--cardBackgroundColor: #1E1E1E;
 	}
 }
 
@@ -76,7 +78,7 @@ h1 {
 
 p {
 	font-weight: 300;
-	line-height: 1.4rem;
+	line-height: 1.25rem;
 }
 
 a {
@@ -88,15 +90,58 @@ a:hover {
 	color: #0088FF;
 }
 
-main > p > a {
-	color: #0088FF;
+#apps-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-top: 16px;
 }
 
-main > div > a > img {
-	border-radius: 12%;
-	margin-right: 12px;
-	margin-top: 6px;
-	width: max(40%, 60px);
-	height: max(40%, 60px);
+.app-card {
+	padding: 20px;
+	background-color: var(--cardBackgroundColor);
+	border-radius: 16px;
+	transition: transform 0.2s ease;
+}
+
+.app-card:hover {
+	transform: scale(1.02);
+}
+
+.app-card img {
+	width: 80px;
+	height: 80px;
+	border-radius: 18px;
 	float: left;
+	padding-top: 4px;
+	margin-right: 20px;
+	margin-bottom: 4px;
+}
+
+.app-card-info h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--textColor);
+}
+
+.app-card-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 4px;
+}
+
+.app-status {
+	font-size: 0.55rem;
+	font-weight: 500;
+	padding: 3px 10px;
+	border-radius: 999px;
+	background-color: #0088FF;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+.app-card-info p {
+	font-size: 0.85rem;
+	color: #999999;
 }

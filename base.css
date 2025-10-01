@@ -7,7 +7,7 @@
 /* Colors */
 @media (prefers-color-scheme: light) {
   :root {
-		--backgroundColor: #f4f2e7;
+		--backgroundColor: #F7F7F7;
 		--textColor:  #323232;
 	}
 }

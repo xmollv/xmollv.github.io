@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Xavi Moll - Apps">
+        <meta property="og:url" content="https://xavimoll.com/apps">
+        <meta property="og:image" content="https://xavimoll.com/headshot.jpeg">
+        <meta property="og:site_name" content="Xavi Moll - Senior iOS Developer">
+        <meta property="og:description" content="Apps built by Xavi Moll.">
+        <link rel="stylesheet" href="base.css">
+        <title>Xavi Moll - Apps</title>
+        <link rel="icon" type="image/jpeg" href="../headshot.jpeg"/>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="/"><h4 class="home">xavi moll</h4></a>
+
+            <div class="navbar-links">
+                <a href="/about"><h4>about</h4></a>
+                <a href="index.html"><h4>apps</h4></a>
+                <a href="https://linkedin.com/in/xmollv" target="_blank"><h4>work</h4></a>
+            </div>
+        </div>
+        <main>
+            <div id="apps-grid"></div>
+        </main>
+        <script src="apps.js"></script>
+        <script>
+            const grid = document.getElementById('apps-grid');
+            apps.forEach(app => {
+                const link = document.createElement('a');
+                link.href = app.url;
+                link.target = '_blank';
+
+                const card = document.createElement('div');
+                card.className = 'app-card';
+
+                const img = document.createElement('img');
+                img.src = app.icon;
+                img.alt = app.name + ' icon';
+
+                const info = document.createElement('div');
+                info.className = 'app-card-info';
+
+                const titleRow = document.createElement('div');
+                titleRow.className = 'app-card-title';
+
+                const name = document.createElement('h3');
+                name.textContent = app.name;
+                titleRow.appendChild(name);
+
+                if (app.status) {
+                    const status = document.createElement('span');
+                    status.className = 'app-status';
+                    status.textContent = app.status;
+                    if (app.statusColor) {
+                        status.style.backgroundColor = app.statusColor;
+                    }
+                    titleRow.appendChild(status);
+                }
+
+                const desc = document.createElement('p');
+                desc.textContent = app.description;
+
+                info.appendChild(titleRow);
+                info.appendChild(desc);
+                card.appendChild(img);
+                card.appendChild(info);
+                link.appendChild(card);
+                grid.appendChild(link);
+            });
+        </script>
+    </body>
+</html>
