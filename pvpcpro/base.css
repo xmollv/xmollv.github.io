@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light dark;
+  --background: #f7f7f7;
+  --surface: #fff;
+  --text: #243330;
+  --secondary: #596763;
+  --accent: #08766c;
+  --border: rgba(0, 0, 0, .1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; background: var(--background); color: var(--text); }
+body { line-height: 1.55; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 4px; }
+a:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
+img { display: block; max-width: 100%; height: auto; }
+.skip-link { position: absolute; top: -100px; left: 20px; padding: 12px; background: var(--surface); z-index: 3; }
+.skip-link:focus { top: 10px; }
+header { position: sticky; top: 0; z-index: 2; background: var(--surface); border-bottom: 1px solid var(--border); }
+nav { max-width: 1048px; margin: auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 24px; font-weight: 700; letter-spacing: -.7px; }
+.brand:hover { text-decoration: none; }
+.brand img, .closing > img { border-radius: 23%; }
+.nav-download { font-size: 14px; font-weight: 600; padding: 8px 0; }
+.hero { max-width: 1048px; margin: auto; padding: 64px 24px 48px; text-align: center; border-bottom: 1px solid var(--border); }
+.eyebrow { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 16px; }
+h1 { font-size: clamp(42px, 7vw, 72px); line-height: 1.05; letter-spacing: -.055em; font-weight: 750; text-wrap: balance; }
+.intro { max-width: 610px; margin: 24px auto; color: var(--secondary); font-size: 20px; line-height: 1.5; text-wrap: pretty; }
+.download { display: inline-flex; align-items: center; gap: 16px; padding: 14px 22px; border-radius: 12px; background: #08766c; color: white; font-size: 16px; font-weight: 600; }
+.download:hover { background: #065f57; text-decoration: none; }
+.availability { margin-top: 12px; color: var(--secondary); font-size: 13px; }
+.screenshots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 48px; border-radius: 20px; }
+.screenshots img { width: 100%; border-radius: 16px; }
+.features { max-width: 880px; margin: auto; padding: 64px 24px 16px; }
+h2 { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; letter-spacing: -.035em; text-align: center; text-wrap: balance; }
+.feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 64px; margin-top: 28px; }
+.feature { text-align: center; padding: 32px 0; border-bottom: 1px solid var(--border); }
+.feature-icon { display: block; font-size: 28px; margin-bottom: 12px; }
+h3 { font-size: 21px; line-height: 1.3; letter-spacing: -.025em; margin-bottom: 10px; text-wrap: balance; }
+.feature p { font-size: 16px; color: var(--secondary); text-wrap: pretty; }
+.closing { padding: 56px 24px 64px; text-align: center; }
+.closing > img { margin: 0 auto 20px; }
+.closing h2 { margin-bottom: 24px; }
+footer { border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; justify-content: center; gap: 40px 72px; padding: 32px 24px; text-align: center; }
+footer h2 { font-size: 15px; letter-spacing: 0; margin-bottom: 8px; }
+footer ul { list-style: none; font-size: 14px; line-height: 1.9; }
+footer > p { flex-basis: 100%; font-size: 13px; color: var(--secondary); }
+#features-title { scroll-margin-top: 90px; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --background: #131716; --surface: #1c2220; --text: #edf4f1; --secondary: #b0bfba; --accent: #77d9c8; --border: rgba(255, 255, 255, .12); }
+}
+
+@media (max-width: 600px) {
+  nav { padding: 10px 20px; }
+  .brand { font-size: 22px; }
+  .hero { padding: 40px 20px 32px; }
+  .intro { font-size: 18px; }
+  .screenshots { display: flex; overflow-x: auto; gap: 16px; margin-top: 32px; padding: 0 0 16px; scroll-snap-type: x mandatory; }
+  .screenshots img { flex: 0 0 82%; width: 82%; scroll-snap-align: center; }
+  .features { padding-top: 40px; }
+  .feature-grid { grid-template-columns: 1fr; max-width: 375px; margin: 16px auto 0; }
+  .feature { padding: 28px 0; }
+  .closing { padding-top: 40px; }
+}
