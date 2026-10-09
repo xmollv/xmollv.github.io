@@ -35,6 +35,11 @@ function formatMonth(isoString) {
     });
 }
 
+// The App Store reports sizes in decimal megabytes.
+function formatSize(bytes) {
+    return (Number(bytes) / 1000000).toFixed(1) + ' MB';
+}
+
 function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) {
@@ -117,6 +122,9 @@ function appRow(app, index) {
 
     const meta = element('div', 'app-meta');
     meta.appendChild(ratingElement(app));
+    if (app.fileSizeBytes) {
+        meta.appendChild(element('span', 'meta-item', formatSize(app.fileSizeBytes)));
+    }
     meta.appendChild(element('span', 'meta-item releases', releasesText(app)));
     info.appendChild(meta);
 
