@@ -98,13 +98,8 @@ function releasesText(app) {
 
 function appRow(app, index) {
     const row = element('a', 'app-row');
-    const landingPage = landingPages[app.trackId];
-    if (landingPage) {
-        row.href = landingPage;
-    } else {
-        row.href = app.trackViewUrl;
-        row.target = '_blank';
-    }
+    row.href = landingPages[app.trackId] || app.trackViewUrl;
+    row.target = '_blank';
     row.style.animationDelay = (index * 70) + 'ms';
 
     const icon = element('img', 'app-icon');
