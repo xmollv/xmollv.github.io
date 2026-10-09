@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+		--backgroundColor: #F7F7F7;
+		--textColor:  #323232;
+		--secondaryTextColor: #8A8A8E;
+		--navBorderColor: rgba(0, 0, 0, 0.1);
+		--cardBackgroundColor: #FFFFFF;
+		--cardShadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.06);
+		--rowHoverColor: rgba(0, 0, 0, 0.03);
+		--buttonBackgroundColor: #EFEFF4;
+		--skeletonColor: rgba(0, 0, 0, 0.06);
+		--emptyStarColor: rgba(0, 0, 0, 0.15);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+		--backgroundColor: #131313;
+		--textColor:  #E5E5E5;
+		--secondaryTextColor: #8D8D93;
+		--navBorderColor: rgba(255, 255, 255, 0.1);
+		--cardBackgroundColor: #1C1C1E;
+		--cardShadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.3);
+		--rowHoverColor: rgba(255, 255, 255, 0.04);
+		--buttonBackgroundColor: #2C2C2E;
+		--skeletonColor: rgba(255, 255, 255, 0.07);
+		--emptyStarColor: rgba(255, 255, 255, 0.2);
+	}
+}
+
+html {
+	font-family: -apple-system, "Helvetica Neue", sans-serif;
+	background-color: var(--backgroundColor);
+	color: var(--textColor);
+	font-style: normal;
+	font-size: 22px;
+}
+
+#navbar {
+	display: flex;
+	padding-left: 24px;
+	padding-right: 24px;
+	position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid var(--navBorderColor);
+}
+
+#navbar:first-child {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	justify-content: space-between;
+}
+
+#navbar > div {
+	display: flex;
+	gap: 24px;
+	width: auto;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+	padding: 0 24px 48px 24px;
+}
+
+h1 {
+	font-size: 4.2rem;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 3.7em;
+	}
+}
+
+@media (max-width: 425px) {
+	h1 {
+		font-size: 3em;
+	}
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.4rem;
+}
+
+a {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	color: #0088FF;
+}
+
+/* Apps list */
+#apps-list {
+	margin-top: 32px;
+	background-color: var(--cardBackgroundColor);
+	border-radius: 28px;
+	box-shadow: var(--cardShadow);
+	overflow: hidden;
+}
+
+.app-row {
+	position: relative;
+	display: grid;
+	grid-template-columns: 80px 1fr auto;
+	align-items: center;
+	gap: 20px;
+	padding: 20px 24px;
+	color: var(--textColor);
+	transition: background-color 0.2s ease;
+	animation: row-appear 0.5s ease both;
+}
+
+.app-row + .app-row::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 124px;
+	right: 0;
+	height: 1px;
+	background-color: var(--navBorderColor);
+}
+
+a.app-row:hover {
+	color: var(--textColor);
+	background-color: var(--rowHoverColor);
+}
+
+@keyframes row-appear {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.app-icon {
+	width: 80px;
+	height: 80px;
+	border-radius: 22.5%;
+	box-shadow: 0 0 0 1px var(--navBorderColor), 0 4px 12px rgba(0, 0, 0, 0.12);
+	transition: transform 0.25s ease;
+}
+
+a.app-row:hover .app-icon {
+	transform: scale(1.05);
+}
+
+.app-info {
+	min-width: 0;
+}
+
+.app-title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 4px 6px;
+	padding-bottom: 4px;
+}
+
+.app-name {
+	font-size: 0.85rem;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-right: 2px;
+}
+
+.platform {
+	font-size: 0.45rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 3px 8px;
+	border-radius: 999px;
+	border: 1px solid var(--navBorderColor);
+	color: var(--secondaryTextColor);
+	white-space: nowrap;
+}
+
+.app-description {
+	font-size: 0.65rem;
+	font-weight: 400;
+	line-height: 1.45;
+	color: var(--secondaryTextColor);
+	margin-bottom: 8px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+	overflow: hidden;
+}
+
+/* At full width the description always fills exactly two lines */
+@media (min-width: 848px) {
+	.app-description {
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+	}
+}
+
+/* Below full width the release history doesn't fit next to the rating, so it gets its own line */
+@media (max-width: 847px) {
+	.app-meta {
+		row-gap: 6px;
+	}
+
+	.releases {
+		flex-basis: 100%;
+	}
+
+	.releases::before {
+		display: none;
+	}
+}
+
+.app-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 4px 0;
+	font-size: 0.55rem;
+	font-weight: 500;
+	color: var(--secondaryTextColor);
+}
+
+.meta-item + .meta-item::before {
+	content: '·';
+	padding: 0 8px;
+}
+
+.rating {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.rating-value {
+	color: var(--textColor);
+	font-weight: 600;
+}
+
+.stars {
+	position: relative;
+	display: inline-block;
+	letter-spacing: 1px;
+	color: var(--emptyStarColor);
+}
+
+.stars::before {
+	content: '★★★★★';
+}
+
+.stars::after {
+	content: '★★★★★';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(var(--rating) / 5 * 100%);
+	overflow: hidden;
+	white-space: nowrap;
+	color: #FF9500;
+}
+
+.view-button {
+	font-size: 0.6rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	padding: 7px 20px;
+	border-radius: 999px;
+	color: #0088FF;
+	background-color: var(--buttonBackgroundColor);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a.app-row:hover .view-button {
+	color: #FFFFFF;
+	background-color: #0088FF;
+}
+
+@media (max-width: 600px) {
+	#apps-list {
+		border-radius: 22px;
+	}
+
+	.app-row {
+		grid-template-columns: 60px 1fr auto;
+		grid-template-areas:
+			"icon name button"
+			"description description description"
+			"meta meta meta";
+		gap: 0 14px;
+		padding: 16px;
+	}
+
+	.app-row:not(.skeleton) .app-info {
+		display: contents;
+	}
+
+	.app-row + .app-row::before {
+		left: 16px;
+	}
+
+	.app-icon {
+		grid-area: icon;
+		width: 60px;
+		height: 60px;
+	}
+
+	.app-title {
+		grid-area: name;
+		padding-bottom: 0;
+	}
+
+	.app-name {
+		font-size: 0.75rem;
+	}
+
+	.app-description {
+		grid-area: description;
+		margin: 12px 0 8px 0;
+	}
+
+	.app-meta {
+		grid-area: meta;
+	}
+
+	.view-button {
+		grid-area: button;
+		padding: 6px 14px;
+	}
+}
+
+/* Loading & error states */
+.skeleton .app-icon {
+	background-color: var(--skeletonColor);
+	box-shadow: none;
+}
+
+.skeleton .app-info div {
+	height: 12px;
+	border-radius: 6px;
+	background-color: var(--skeletonColor);
+	margin: 8px 0;
+}
+
+.skeleton .app-info div:nth-child(1) {
+	width: 40%;
+	height: 16px;
+}
+
+.skeleton .app-info div:nth-child(2) {
+	width: 90%;
+}
+
+.skeleton .app-info div:nth-child(3) {
+	width: 55%;
+}
+
+#apps-list.loading .app-row {
+	animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.apps-error {
+	padding: 32px 24px;
+	text-align: center;
+	color: var(--secondaryTextColor);
+}
+
+.apps-error a {
+	color: #0088FF;
+}
