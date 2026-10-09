@@ -134,6 +134,15 @@ section:last-child {
 	padding-bottom: 96px;
 }
 
+/* Jumping to a section lands its title 40px from the top instead of showing all of its top padding */
+#about {
+	scroll-margin-top: -56px;
+}
+
+#apps {
+	scroll-margin-top: -24px;
+}
+
 h2 {
 	font-size: 1.6rem;
 	font-weight: 700;
