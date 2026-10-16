@@ -323,26 +323,8 @@ a.app-row:hover .app-icon {
 	}
 }
 
-/* Below full width the release history doesn't fit next to the rating, so it gets its own line */
-@media (max-width: 847px) {
-	.app-meta {
-		row-gap: 6px;
-	}
-
-	.releases {
-		flex-basis: 100%;
-	}
-
-	.releases::before {
-		display: none;
-	}
-}
-
 .app-meta {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 4px 0;
+	line-height: 1.6;
 	font-size: 0.55rem;
 	font-weight: 500;
 	color: var(--secondaryTextColor);

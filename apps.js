@@ -22,15 +22,8 @@ function truncate(text, limit) {
 
 function formatDate(isoString) {
     return new Date(isoString).toLocaleDateString('en-US', {
-        month: 'short',
+        month: 'long',
         day: 'numeric',
-        year: 'numeric'
-    });
-}
-
-function formatMonth(isoString) {
-    return new Date(isoString).toLocaleDateString('en-US', {
-        month: 'short',
         year: 'numeric'
     });
 }
@@ -92,15 +85,6 @@ function ratingElement(app) {
     return rating;
 }
 
-function releasesText(app) {
-    // Non-breaking spaces keep the date and version together when the line wraps.
-    const lastUpdate = (formatDate(app.currentVersionReleaseDate) + ' (v' + app.version + ')').replace(/ /g, '\u00a0');
-    if (!app.releaseDate) {
-        return 'Last update on ' + lastUpdate;
-    }
-    return 'Launched in ' + formatMonth(app.releaseDate) + ', last update on ' + lastUpdate;
-}
-
 function appRow(app, index) {
     const row = element('a', 'app-row');
     row.href = landingPages[app.trackId] || app.trackViewUrl;
@@ -125,7 +109,7 @@ function appRow(app, index) {
     if (app.fileSizeBytes) {
         meta.appendChild(element('span', 'meta-item', formatSize(app.fileSizeBytes)));
     }
-    meta.appendChild(element('span', 'meta-item releases', releasesText(app)));
+    meta.appendChild(element('span', 'meta-item releases', 'Updated on ' + formatDate(app.currentVersionReleaseDate)));
     info.appendChild(meta);
 
     row.appendChild(icon);
