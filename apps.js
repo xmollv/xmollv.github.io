@@ -22,7 +22,7 @@ function truncate(text, limit) {
 
 function formatDate(isoString) {
     return new Date(isoString).toLocaleDateString('en-US', {
-        month: 'long',
+        month: 'short',
         day: 'numeric',
         year: 'numeric'
     });

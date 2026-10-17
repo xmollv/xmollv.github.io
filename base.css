@@ -38,7 +38,7 @@ html {
 	background-color: var(--backgroundColor);
 	color: var(--textColor);
 	font-style: normal;
-	font-size: 22px;
+	font-size: 20px;
 	scroll-behavior: smooth;
 }
 
@@ -153,7 +153,7 @@ h2 {
 
 p {
 	font-weight: 300;
-	line-height: 1.55;
+	line-height: 1.45;
 }
 
 .about-text {

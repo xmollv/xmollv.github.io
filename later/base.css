@@ -30,6 +30,9 @@ h1 { font-size: clamp(42px, 7vw, 72px); line-height: 1.05; letter-spacing: -.055
 .download { display: inline-flex; align-items: center; gap: 16px; padding: 14px 22px; border-radius: 12px; background: #0866c7; color: white; font-size: 16px; font-weight: 600; }
 .download:hover { background: #0755a5; text-decoration: none; }
 .availability { margin-top: 12px; color: var(--secondary); font-size: 13px; }
+/* The strip bleeds into the hero padding so the shadows aren't clipped by the scroll area */
+.screenshots { display: flex; gap: 20px; margin: 40px -24px 0; padding: 8px 24px 32px; scroll-padding-inline: 24px; overflow-x: auto; scroll-snap-type: x mandatory; }
+.screenshots img { flex: 0 0 calc((100% - 60px) / 4.25); width: calc((100% - 60px) / 4.25); border-radius: 16px; scroll-snap-align: start; box-shadow: 0 0 0 1px rgba(0, 0, 0, .08), 0 2px 4px rgba(0, 0, 0, .06), 0 12px 28px rgba(0, 0, 0, .14); }
 .features { max-width: 880px; margin: auto; padding: 64px 24px 16px; }
 h2 { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; letter-spacing: -.035em; text-align: center; text-wrap: balance; }
 .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 64px; margin-top: 28px; }
@@ -55,16 +58,13 @@ footer > p { flex-basis: 100%; font-size: 13px; color: var(--secondary); }
   .brand { font-size: 22px; }
   .hero { padding: 40px 20px 32px; }
   .intro { font-size: 18px; }
+  .screenshots { gap: 16px; margin: 24px -20px 0; padding: 8px 20px 28px; scroll-padding-inline: 20px; }
+  .screenshots img { flex: 0 0 82%; width: 82%; scroll-snap-align: center; }
   .features { padding-top: 40px; }
   .feature-grid { grid-template-columns: 1fr; max-width: 375px; margin: 16px auto 0; }
   .feature { padding: 28px 0; }
   .closing { padding-top: 40px; }
 }
 
-/* Later's existing device composition stays intact at every screen size. */
-.hero-image { width: 100%; margin: 48px auto 0; }
 .feature:last-child { grid-column: 1 / -1; width: 100%; max-width: 384px; justify-self: center; }
 #features { scroll-margin-top: 74px; }
-@media (max-width: 600px) {
-  .hero-image { margin-top: 32px; }
-}
