@@ -8,6 +8,15 @@ const landingPages = {
     1553698241: '/bookie/',
     6813000139: '/pvpcpro/'
 };
+// Short names shown instead of the App Store titles, which include a subtitle.
+const appNames = {
+    1507396839: 'Later',
+    1553698241: 'Bookie',
+    6813000139: 'PVPCPro',
+    1355340767: 'Llitgi'
+};
+// Apps listed first, in this order. The rest follow, most recently updated first.
+const pinnedApps = [1507396839, 1553698241];
 
 function truncate(text, limit) {
     const clean = text.replace(/\s+/g, ' ').trim();
@@ -85,6 +94,11 @@ function ratingElement(app) {
     return rating;
 }
 
+function pinnedRank(app) {
+    const index = pinnedApps.indexOf(app.trackId);
+    return index === -1 ? pinnedApps.length : index;
+}
+
 function appRow(app, index) {
     const row = element('a', 'app-row');
     row.href = landingPages[app.trackId] || app.trackViewUrl;
@@ -93,11 +107,12 @@ function appRow(app, index) {
 
     const icon = element('img', 'app-icon');
     icon.src = app.artworkUrl512;
-    icon.alt = app.trackName + ' icon';
+    icon.alt = (appNames[app.trackId] || app.trackName) + ' icon';
 
     const info = element('div', 'app-info');
+    const name = appNames[app.trackId] || app.trackName;
     const title = element('div', 'app-title');
-    title.appendChild(element('h3', 'app-name', app.trackName));
+    title.appendChild(element('h3', 'app-name', name));
     platforms(app).forEach(platform => {
         title.appendChild(element('span', 'platform', platform));
     });
@@ -138,7 +153,8 @@ async function loadApps() {
         const json = await response.json();
         const apps = json.results
             .filter(result => result.wrapperType === 'software')
-            .sort((a, b) => new Date(b.currentVersionReleaseDate) - new Date(a.currentVersionReleaseDate));
+            .sort((a, b) => pinnedRank(a) - pinnedRank(b)
+                || new Date(b.currentVersionReleaseDate) - new Date(a.currentVersionReleaseDate));
 
         list.replaceChildren(...apps.map(appRow));
         list.classList.remove('loading');

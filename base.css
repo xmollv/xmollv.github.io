@@ -184,9 +184,10 @@ p {
 }
 
 @media (max-width: 600px) {
+	/* Fixed height that ends just above the fifth line, so the text wraps back to full width right below the photo */
 	.headshot-link {
-		width: 28%;
-		margin: 10px 18px 12px 0;
+		width: calc(4 * 1.45rem - 16px);
+		margin: 10px 18px 0 0;
 	}
 
 	.headshot {
