@@ -8,13 +8,6 @@ const landingPages = {
     1553698241: '/bookie/',
     6813000139: '/pvpcpro/'
 };
-// Short names shown instead of the App Store titles, which include a subtitle.
-const appNames = {
-    1507396839: 'Later',
-    1553698241: 'Bookie',
-    6813000139: 'PVPCPro',
-    1355340767: 'Llitgi'
-};
 // Apps listed first, in this order. The rest follow, most recently updated first.
 const pinnedApps = [1507396839, 1553698241];
 
@@ -107,12 +100,11 @@ function appRow(app, index) {
 
     const icon = element('img', 'app-icon');
     icon.src = app.artworkUrl512;
-    icon.alt = (appNames[app.trackId] || app.trackName) + ' icon';
+    icon.alt = app.trackName + ' icon';
 
     const info = element('div', 'app-info');
-    const name = appNames[app.trackId] || app.trackName;
     const title = element('div', 'app-title');
-    title.appendChild(element('h3', 'app-name', name));
+    title.appendChild(element('h3', 'app-name', app.trackName));
     platforms(app).forEach(platform => {
         title.appendChild(element('span', 'platform', platform));
     });
