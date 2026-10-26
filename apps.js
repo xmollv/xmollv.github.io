@@ -6,7 +6,7 @@ const descriptionLimit = 180;
 const landingPages = {
     1507396839: '/later/',
     1553698241: '/bookie/',
-    6813000139: '/pvpcpro/'
+    6813000139: '/laluz/'
 };
 // Apps listed first, in this order. The rest follow, most recently updated first.
 const pinnedApps = [1507396839, 1553698241];
