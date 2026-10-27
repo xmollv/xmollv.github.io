@@ -21,7 +21,6 @@ header { position: sticky; top: 0; z-index: 2; background: var(--surface); borde
 nav { max-width: 1048px; margin: auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 24px; font-weight: 700; letter-spacing: -.7px; }
 .brand:hover { text-decoration: none; }
-.brand img, .closing > img { border-radius: 23%; }
 .nav-download { font-size: 14px; font-weight: 600; padding: 8px 0; }
 .hero { max-width: 1048px; margin: auto; padding: 64px 24px 48px; text-align: center; border-bottom: 1px solid var(--border); }
 .eyebrow { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 16px; }
